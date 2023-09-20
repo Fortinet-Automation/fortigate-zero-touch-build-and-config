@@ -35,6 +35,7 @@ resource "aws_instance" "fgtvm" {
     type         = "${var.license_type}"
     license_file = "${var.license}"
     adminsport   = "${var.adminsport}"
+    fmgip        = "${var.fmgip}"
   })
 
   root_block_device {
